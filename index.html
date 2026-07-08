@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>20260520</title>
+    <title>Dressup Idea App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <h1>👗 Dressup Idea</h1>
+
+        <label>Age</label>
+
+        <select id="age">
+            <option>Below 19</option>
+            <option>19+</option>
+        </select>
+
+        <label>Body Type</label>
+
+        <select id="body">
+            <option>Thin</option>
+            <option>Normal</option>
+            <option>Fat</option>
+        </select>
+
+        <label>Skin Color</label>
+
+        <select id="skin">
+            <option>Fair</option>
+            <option>Wheatish</option>
+            <option>Dark</option>
+        </select>
+
+        <label>Weather</label>
+
+        <select id="weather">
+            <option>Summer</option>
+            <option>Winter</option>
+            <option>Rainy</option>
+        </select>
+
+        <button onclick="idea()">Show Idea</button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
