@@ -1,57 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#fff5f8;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Dressup Idea App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+header{
+    background:#ff4d88;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
 
-<body>
+nav{
+    background:#333;
+    text-align:center;
+    padding:10px;
+}
 
-    <div class="container">
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+}
 
-        <h1>👗 Dressup Idea</h1>
+.hero{
+    text-align:center;
+    padding:50px;
+}
 
-        <label>Age</label>
+button{
+    padding:10px 20px;
+    background:#ff4d88;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
 
-        <select id="age">
-            <option>Below 19</option>
-            <option>19+</option>
-        </select>
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:20px;
+}
 
-        <label>Body Type</label>
+.card{
+    background:white;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+    text-align:center;
+    overflow:hidden;
+}
 
-        <select id="body">
-            <option>Thin</option>
-            <option>Normal</option>
-            <option>Fat</option>
-        </select>
+.card img{
+    width:100%;
+}
 
-        <label>Skin Color</label>
-
-        <select id="skin">
-            <option>Fair</option>
-            <option>Wheatish</option>
-            <option>Dark</option>
-        </select>
-
-        <label>Weather</label>
-
-        <select id="weather">
-            <option>Summer</option>
-            <option>Winter</option>
-            <option>Rainy</option>
-        </select>
-
-        <button onclick="idea()">Show Idea</button>
-
-        <div id="result"></div>
-
-    </div>
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
